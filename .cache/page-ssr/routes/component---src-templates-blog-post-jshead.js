@@ -856,13 +856,13 @@ const Bio = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     className: "bio-avatar",
     layout: "fixed",
-    formats: ["auto", "webp", "avif"],
+    formats: ["auto", "webp", "jpeg", "png"],
     src: "../images/profile-pic.jpg",
     width: 50,
     height: 50,
     quality: 95,
     alt: "Profile picture",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1071939039.json */ "./.cache/caches/gatsby-plugin-image/1071939039.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2331985000.json */ "./.cache/caches/gatsby-plugin-image/2331985000.json")
   }), (author === null || author === void 0 ? void 0 : author.name) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Written by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("strong", null, author.name), " ", (author === null || author === void 0 ? void 0 : author.summary) || null, ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
     href: `https://twitter.com/${(social === null || social === void 0 ? void 0 : social.twitter) || ``}`
   }, "X")));
@@ -911,9 +911,7 @@ const Layout = ({
     "data-is-root-path": isRootPath
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", {
     className: "global-header"
-  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", Built with", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.gatsbyjs.com"
-  }, "Gatsby")));
+  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", Copyright", ` `, "Chris Hibler"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
@@ -1062,13 +1060,13 @@ const pageQuery = "3085459379";
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1071939039.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2331985000.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1071939039.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2331985000.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#b8c8e8","images":{"fallback":{"src":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/d24ee/profile-pic.jpg","srcSet":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/d24ee/profile-pic.jpg 50w,\\n/static/dcfe5a0211bf7676ec8e4a58d540a6fa/64618/profile-pic.jpg 100w","sizes":"50px"},"sources":[{"srcSet":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/d4bf4/profile-pic.avif 50w,\\n/static/dcfe5a0211bf7676ec8e4a58d540a6fa/ee81f/profile-pic.avif 100w","type":"image/avif","sizes":"50px"},{"srcSet":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/3faea/profile-pic.webp 50w,\\n/static/dcfe5a0211bf7676ec8e4a58d540a6fa/6a679/profile-pic.webp 100w","type":"image/webp","sizes":"50px"}]},"width":50,"height":50}');
+module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#b8c8e8","images":{"fallback":{"src":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/d24ee/profile-pic.jpg","srcSet":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/d24ee/profile-pic.jpg 50w,\\n/static/dcfe5a0211bf7676ec8e4a58d540a6fa/64618/profile-pic.jpg 100w","sizes":"50px"},"sources":[{"srcSet":"/static/dcfe5a0211bf7676ec8e4a58d540a6fa/3faea/profile-pic.webp 50w,\\n/static/dcfe5a0211bf7676ec8e4a58d540a6fa/6a679/profile-pic.webp 100w","type":"image/webp","sizes":"50px"}]},"width":50,"height":50}');
 
 /***/ }),
 

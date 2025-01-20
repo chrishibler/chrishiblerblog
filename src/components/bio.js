@@ -38,7 +38,7 @@ const Bio = () => {
       <StaticImage
         className="bio-avatar"
         layout="fixed"
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp", "jpeg", "png"]}
         src="../images/profile-pic.jpg"
         width={50}
         height={50}
@@ -49,9 +49,7 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            X
-          </a>
+          <a href={`https://twitter.com/${social?.twitter || ``}`}>X</a>
         </p>
       )}
     </div>
