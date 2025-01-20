@@ -27,6 +27,15 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        resolve: `gatsby-remark-vscode`,
+        options: {
+          theme: "Abyss",
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content/blog`,
