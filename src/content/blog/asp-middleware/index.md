@@ -3,7 +3,6 @@ title: "ASP.NET Request Logging Middleware"
 date: "2025-01-20"
 author: "Chris Hibler"
 description: "How to use ASP.NET Core middleware for request logging."
-featuredImage: logging-dashboard.webp
 ---
 
 ![Request Dashboard](logging-dashboard.webp)
