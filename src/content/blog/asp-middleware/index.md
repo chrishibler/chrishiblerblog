@@ -81,12 +81,14 @@ builder.Services.AddControllers();
 builder.Logging.AddConsole();
 
 var app = builder.Build();
+
 // Add custom middleware
 app.UseMiddleware<RequestLoggingMiddleware>();
+
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-app.UseDeveloperExceptionPage();
+    app.UseDeveloperExceptionPage();
 }
 app.UseHttpsRedirection();
 app.UseAuthorization();
