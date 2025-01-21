@@ -15,17 +15,38 @@ module.exports = {
       summary: `who lives and works in Fresno, CA building useful things.`,
     },
     description: `A blog to document my journey and stumbling blocks as a software engineer.`,
-    siteUrl: `https://chibler.com`,
+    siteUrl: `https://chrishibler.com`,
     social: {
       linkedin: `chrishibler`,
       twitter: `chrishibler`,
       instagram: `chrishibler`,
       facebook: `chrishibler`,
+      github: `chrishibler`,
     },
   },
   plugins: [
     `gatsby-plugin-netlify`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
+        web: [
+          {
+            name: `Roboto`,
+            file: `https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap`,
+          },
+          {
+            name: `IBM Plex Serif`,
+            file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -8,6 +8,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import Socials from "./socials";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -18,12 +19,6 @@ const Bio = () => {
             name
             summary
           }
-          social {
-            twitter
-            linkedin
-            facebook
-            instagram
-          }
         }
       }
     }
@@ -31,28 +26,31 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author;
-  const social = data.site.siteMetadata?.social;
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "jpeg", "png"]}
-        src="../images/profile-pic.jpg"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>X</a>
-        </p>
-      )}
-    </div>
+    <>
+      <div className="bio-container">
+        <div className="bio">
+          <StaticImage
+            className="bio-avatar"
+            layout="fixed"
+            formats={["auto", "webp", "jpeg", "png"]}
+            src="../images/profile-pic.jpg"
+            width={50}
+            height={50}
+            quality={95}
+            alt="Profile picture"
+          />
+          {author?.name && (
+            <p>
+              Written by <strong>{author.name}</strong>{" "}
+              {author?.summary || null}
+            </p>
+          )}
+        </div>
+        <Socials />
+      </div>
+    </>
   );
 };
 
