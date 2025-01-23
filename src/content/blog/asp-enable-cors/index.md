@@ -2,8 +2,10 @@
 title: "Enable CORS in ASP.NET Core (WebAPI)"
 date: "2025-01-20"
 author: "Chris Hibler"
-description: "How to enable CORS in ASP.NET Core"
+description: "How to enable CORS in ASP.NET Core - Chris Hibler"
 ---
+
+![CORS](cors.png)
 
 # How to Enable CORS in ASP.NET Core
 

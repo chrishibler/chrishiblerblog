@@ -22,6 +22,7 @@ module.exports = {
       instagram: `chrishibler`,
       facebook: `chrishibler`,
       github: `chrishibler`,
+      medium: `chrishibler`,
     },
   },
   plugins: [
@@ -151,8 +152,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Chris Hibler's Blog`,
+        short_name: `Chris Hibler`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

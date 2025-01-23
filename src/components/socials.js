@@ -13,6 +13,7 @@ const Socials = () => {
             instagram
             facebook
             github
+            medium
           }
         }
       }
@@ -43,6 +44,7 @@ const Socials = () => {
         url={`https://www.github.com/${social.github}`}
         bgColor={bg}
       />
+      <SocialIcon url={`https://medium.com/@${social.github}`} bgColor={bg} />
     </div>
   );
 };

@@ -1,8 +1,10 @@
 ---
 title: Mastering the Specification Pattern
 date: "2025-01-02"
-description: Specification pattern article written by Chris Hibler
+description: "Using the specification pattern with Ardalis.Specification - Chris Hibler"
 ---
+
+![Specification Pattern](specification-pattern.jpg)
 
 ## Mastering the Specification Pattern
 
