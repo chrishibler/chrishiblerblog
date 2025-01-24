@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { Script } from "gatsby";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -22,6 +23,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16828308323"></Script>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
